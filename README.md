@@ -79,11 +79,11 @@
 - 命令  ls 查看当前目录的所有文件
 - 命令 clear  清屏
 
-# 创建远程仓库
+# 创建远程git仓库
 
 ## 官网创建准备
 - 进入github官网
-- 创建一个新的远程仓库
+- 创建一个新的远程仓库(new)
 
 ## 将本地仓库与远程仓库关联
 - git remote add origin https://github.com/1433223gg/GP5.git (你的远程仓库地址)
@@ -93,7 +93,7 @@
 - origin  https://github.com/1433223gg/GP5.git (push)  //表示到该地址添加
 
 ## 将本地仓库提交到远程仓库
-- git push -u origin master  （第一次提交到远程需要这么写，master是自定义的）
+- git push -u origin master  （第一次提交到远程或者修改关联的远程仓库地址时需要这么写，master是自定义的一个分支，相当于建立一个对分支的固定的链接）
 - git push 将本地仓库提交到远程仓库（之后用这个就行）
 - -u origin master 设置默认的提交地址和分支
 
@@ -105,17 +105,17 @@
 # 配置SSH公匙
 
 ## 配置公匙步骤
-- （1）首先检查电脑是否曾经生成过私钥
+- (1) 首先检查电脑是否曾经生成过私钥公钥
 cd ~/.ssh
-若打开该文件夹为空，则表示没有生成过秘钥，进入第二步。（~表示根目录）
--  (2) 生成私钥
+若打开该文件夹为空，则表示没有生成过密钥，进入第二步。（~表示根目录）
+- (2) 生成私钥
 ssh-keygen -t rsa -C "your email"
 命令要求输入密码，不用输，三个回车即可。
 执行成功后，会在主目录.ssh路径下生成两个文件：id_rsa私钥文件；id_rsa.pub公钥文件； 
-- （3）配置公钥
+- (3) 配置公钥
 登陆github帐户点击头像，然后 Settings -> 左栏点击 SSH and GPG keys -> 点击 New SSH key
 在远程仓库github上添加title和key，和本地的一致。title可以自己取一个容易区分的名字，key为id_rsa.pub中的内容（全部复制，可用cat id_rsa.pub命令打开）
--  (4)修改关联的远程仓库地址
+- (4) 修改关联的远程仓库地址
 创建的项目中会有Code按钮，可以下载代码，点击下拉中clone里有SSH，复制其中的地址进行修改关联远程仓库地址操作
 - git使用https协议，每次pull, push都要输入密码，相当的烦。
 使用git协议，然后配置好SSH，这样可以省去每次都输密码。
@@ -123,7 +123,7 @@ ssh-keygen -t rsa -C "your email"
 ## 修改关联的远程仓库地址
 - git remote rm origin
 - git remote add origin git@github.com:1433223gg/GP5.git (SSH地址)
-- git push -u origin master 将本地仓库提交到远程仓库 如果有yes/no 就选yes
+- git push -u origin master (将本地仓库提交到指定的远程仓库位置，相当于第一次提交的操作) 如果回车运行过程中有yes/no选择，就选yes
 - git remote -v 查看是否修改完成
 
 # 项目工作中出现的真实情况
@@ -148,6 +148,6 @@ ssh-keygen -t rsa -C "your email"
 git clone https://github.com/1433223gg/GP5.git （远程仓库地址）
 克隆了整个版本库到当前文件夹
 3. 要进入项目文件夹中，可以使用如 cd GP5 进入到项目路径，如果显示 work/GP5 (master)
-有 master 说明可以进行版本库更新了，不需要对其进行任何设置，直接可以进行上面的工作提交操作
+有 master 说明可以进行版本库更新了，不需要对其进行任何设置，直接可以进行上面的正常工作提交操作
 
 
