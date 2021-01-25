@@ -155,6 +155,9 @@ git clone https://github.com/1433223gg/GP5.git （远程仓库地址）
 - 当前分支名前面会有一个*号，如 * master
 - git branch 分支名 创建一个分支，类似一个指针，指向特定的某个版本，类似于复制但不是复制出一整个备份，目的是方便修改，分支可以随意操作。
 - git checkout 分支名 切换分支
+- git merge 新分支名 合并某分支到当前，需要切换到要合并的项目当前分支中，再合并新分支，如果有冲突，需要先进行合并或选择，然后如果出现括号里不是master分支的情况，需要先add再commit。
+- git branch -d 分支名  删除某分支
+- git push origin 分支名  将某分支提交到远程（需要在master当前默认分支中操作）
 
 ## test分支
 - 添加内容。。。
