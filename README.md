@@ -126,7 +126,7 @@ ssh-keygen -t rsa -C "your email"
 - git push -u origin master 将本地仓库提交到远程仓库 如果有yes/no 就选yes
 - git remote -v 查看是否修改完成
 
-# 项目中出现的其他情况
+# 项目工作中出现的真实情况
 
 ## 更新代码
 - 到岗第一件事，更新代码
@@ -141,5 +141,13 @@ ssh-keygen -t rsa -C "your email"
 - git commit -m '注释' 提交到本地仓库
 - git pull 先更新远程到本地
 - git push 提交到远程仓库(默认提交到origin上的master分支)
+
+## 代码更新到本地
+1. 不能下载压缩包，这样并不能让我们参与到项目中去，不是一个版本库
+2. 在创建的工作文件夹中打开命令框
+git clone https://github.com/1433223gg/GP5.git （远程仓库地址）
+克隆了整个版本库到当前文件夹
+3. 要进入项目文件夹中，可以使用如 cd GP5 进入到项目路径，如果显示 work/GP5 (master)
+有 master 说明可以进行版本库更新了，不需要对其进行任何设置，直接可以进行上面的工作提交操作
 
 
