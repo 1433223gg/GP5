@@ -2,7 +2,7 @@
 - 项目说明文档
 - 一般都与项目放在一起
 
-# git操作
+# git本地操作
 
 ## 初始化版本库
 - git init
@@ -59,9 +59,15 @@
 ## 版本回退
 - git reset --hard HEAD^(回退几个版本就加几个^)
 - git reset --hard 版本号(回退到某个指定版本)
+- 注意把当前代码先提交到本地仓库
 - 工作区代码自动变为指定版本的代码，会被替换掉
+- 回退到某一版本之后，从当前版本到之前的版本之间的日志会被删除
 
-## git命令行中的操作命令：
+## 查看变动
+- git diff 文件名
+- 会列出该文件前后的差异
+
+## git命令行中的其他操作命令：
 - 命令  cd d:  进入相应的磁盘 
 - 命令  cd  进入文件夹
 - 命令 cd ..  返回上一层目录
@@ -73,4 +79,20 @@
 - 命令  ls 查看当前目录的所有文件
 - 命令 clear  清屏
 
+# 创建远程仓库
 
+## 官网创建准备
+- 进入github官网
+- 创建一个新的远程仓库
+
+## 将本地仓库与远程仓库关联
+- git remote add origin https://github.com/1433223gg/GP5.git (你的远程仓库地址)
+- origin 可以看成一个变量，指向后面的地址
+- git remote -v 查看本地仓库关联的远程仓库地址
+- origin  https://github.com/1433223gg/GP5.git (fetch) //表示从该地址获取
+- origin  https://github.com/1433223gg/GP5.git (push)  //表示到该地址添加
+
+## 将本地仓库提交到远程仓库
+- git push -u origin master  （第一次提交到远程需要这么写，master是自定义的）
+- git push 将本地仓库提交到远程仓库（之后用这个就行）
+- -u origin master 设置默认的提交地址和分支
