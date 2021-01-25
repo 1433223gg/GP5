@@ -41,7 +41,7 @@
 - 注释用以方便查看版本信息
 - 将暂存区代码提交到本地仓库
 - git status 查看状态显示
-- 如果显示*** Please tell me who you are. 则需要填写配置
+- 如果显示*** Please tell me who you are. 则需要填写配置，进行如下操作：
 - 命令   git config --global user.name "你的git名称"
 - 命令   git config --global user.email "你的git验证邮箱"
 - 查看配置列表： git config --list
@@ -97,7 +97,7 @@
 - git push 将本地仓库提交到远程仓库（之后用这个就行）
 - -u origin master 设置默认的提交地址和分支
 
-## 正常提交（非第一次）总结
+## 正常的提交（非第一次）总结
 - git add . 提交到暂存区
 - git commit -m '注释' 提交到本地仓库
 - git push 提交到远程仓库(默认提交到origin上的master分支)
@@ -126,3 +126,9 @@ ssh-keygen -t rsa -C "your email"
 - git push -u origin master 将本地仓库提交到远程仓库 如果有yes/no 就选yes
 - git remote -v 查看是否修改完成
 
+
+# 项目中出现的其他情况
+
+## 更新代码
+- 确保自己工作区代码先提交到本地仓库
+- 然后再从远程更新到本地
