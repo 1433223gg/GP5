@@ -166,3 +166,5 @@ git clone https://github.com/1433223gg/GP5.git （远程仓库地址）
 3. git pull会自动合并到当前分支(会自动merge)
 
 123456
+
+6666666
