@@ -126,9 +126,20 @@ ssh-keygen -t rsa -C "your email"
 - git push -u origin master 将本地仓库提交到远程仓库 如果有yes/no 就选yes
 - git remote -v 查看是否修改完成
 
-
 # 项目中出现的其他情况
 
 ## 更新代码
-- 确保自己工作区代码先提交到本地仓库
-- 然后再从远程更新到本地
+- 到岗第一件事，更新代码
+- git add .
+  git commit -m
+确保自己工作区代码先提交到本地仓库
+- 然后再从远程更新到本地 git pull
+- 如果出现更新內容和本地仓库內容冲突的情况，可以在vs编辑器中根据情况进行合并和选择
+
+## 工作时要做的正常提交总结
+- git add . 提交到暂存区
+- git commit -m '注释' 提交到本地仓库
+- git pull 先更新远程到本地
+- git push 提交到远程仓库(默认提交到origin上的master分支)
+
+
