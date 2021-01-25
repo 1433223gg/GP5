@@ -126,3 +126,5 @@ ssh-keygen -t rsa -C "your email"
 - git push -u origin master 将本地仓库提交到远程仓库 如果有yes/no 就选yes
 - git remote -v 查看是否修改完成
 
+## 其他人修改
+。。。。。。
