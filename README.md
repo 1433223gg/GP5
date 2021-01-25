@@ -158,3 +158,11 @@ git clone https://github.com/1433223gg/GP5.git （远程仓库地址）
 - git merge 新分支名 合并某分支到当前，需要切换到要合并的项目当前分支中，再合并新分支，如果有冲突，需要先进行合并或选择，然后如果出现括号里不是master分支的情况，需要先add再commit。
 - git branch -d 分支名  删除某分支
 - git push origin 分支名  将某分支提交到远程（需要在master当前默认分支中操作）
+- git pull origin 分支名 将某个分支更新到本地仓库
+
+## fetch和pull的区别
+1. 他们都用于从远程更新代码到本地
+2. git fetch不会自动合并到当前分支(不会merge)
+3. git pull会自动合并到当前分支(会自动merge)
+
+
