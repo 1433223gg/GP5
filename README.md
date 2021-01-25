@@ -13,7 +13,7 @@
 - 持有实际文件（当前能直接看到的文件夹文件）
 - 我们平时增删改查的文件都是工作区的内容
 
-## 提交到暂存区
+## 暂存区
 - 可以理解为我们看不到的一个地方，不需要直接去操作这个区域
 - 本地仓库的一个主要组成部分
 
@@ -123,5 +123,6 @@ ssh-keygen -t rsa -C "your email"
 ## 修改关联的远程仓库地址
 - git remote rm origin
 - git remote add origin git@github.com:1433223gg/GP5.git (SSH地址)
+- git push -u origin master 将本地仓库提交到远程仓库 如果有yes/no 就选yes
 - git remote -v 查看是否修改完成
 
