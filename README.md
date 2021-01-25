@@ -162,9 +162,9 @@ git clone https://github.com/1433223gg/GP5.git （远程仓库地址）
 
 ## fetch和pull的区别
 1. 他们都用于从远程更新代码到本地
-2. git fetch origin 分支名 不会自动合并到当前分支(不会merge)，fetch会主动生成一个分支，如FETCH_HEAD，这时需要主动进行一次分支合并。
+2. git fetch origin 分支名 不会自动合并到当前分支(不会merge)，fetch会主动生成一个分支，如FETCH_HEAD，这时需要主动进行一次分支合并，git merge FETCH_HEAD
 3. git pull会自动合并到当前分支(会自动merge)
 
-123456
-
-6666666
+## 忽略列表
+- 在项目中创建文件 .gitignore
+- 把不需要提交到远程仓库的文件或目录写在忽略列表中
