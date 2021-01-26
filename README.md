@@ -168,3 +168,16 @@ git clone https://github.com/1433223gg/GP5.git （远程仓库地址）
 ## 忽略列表
 - 在项目中创建文件 .gitignore
 - 把不需要提交到远程仓库的文件或目录写在忽略列表中
+- .DS_Store
+- node_modules/
+- /dist/
+- npm-debug.log*
+- yarn-debug.log*
+- yarn-error.log*
+
+- .idea
+- .vscode
+- *.suo
+- *.ntvs*
+- *.njsproj
+- *.sln
